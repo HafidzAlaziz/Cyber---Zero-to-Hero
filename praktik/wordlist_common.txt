@@ -1,0 +1,14 @@
+admin
+assets
+backup
+backups
+css
+db
+dev
+images
+js
+materi
+praktik
+secret
+secret_dev_backups
+uploads

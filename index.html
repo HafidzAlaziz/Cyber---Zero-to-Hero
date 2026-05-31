@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Security Academy - Road to Expert</title>
+    
+    <!-- Google Fonts for Modern Monospace & UI Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Space+Grotesk:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    
+    <!-- Custom Cyberpunk Stylesheet -->
+    <link rel="stylesheet" href="app.css?v=6">
+    
+    <!-- Marked.js for dynamic markdown parsing -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+    <!-- Terminal Overlay Glitch Effect -->
+    <div class="scanlines"></div>
+
+    <div class="app-container">
+        <!-- Sidebar Navigation -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <div class="logo">
+                    <i class="ri-terminal-box-line neon-glow-text"></i>
+                    <span>CYBER_ACADEMY v1.0</span>
+                </div>
+                <div class="status-indicator">
+                    <span class="pulse-dot"></span>
+                    <span class="status-text">FEDORA_ACTIVE</span>
+                </div>
+            </div>
+
+            <!-- Learning Progress Tracker -->
+            <div class="progress-container">
+                <div class="progress-info">
+                    <span>Progres Belajar</span>
+                    <span id="progress-percentage">0%</span>
+                </div>
+                <div class="progress-bar-bg">
+                    <div id="progress-bar-fill" style="width: 0%"></div>
+                </div>
+            </div>
+
+            <nav class="sidebar-menu">
+                <div class="menu-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li class="menu-item active" onclick="loadContent('home')">
+                            <i class="ri-home-4-line"></i>
+                            <span>Dashboard Utama</span>
+                        </li>
+                        <li class="menu-item" onclick="loadContent('kamus')">
+                            <i class="ri-book-read-line"></i>
+                            <span>Kamus Istilah</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="menu-section">
+                    <h3>Materi Pembelajaran</h3>
+                    <ul id="materi-list">
+                        <!-- Dynamic list populated by JavaScript -->
+                        <li class="menu-item loading-item">Loading modules...</li>
+                    </ul>
+                </div>
+            </nav>
+
+            <div class="sidebar-footer">
+                <div class="user-profile">
+                    <i class="ri-user-secret-line avatar"></i>
+                    <div class="user-details">
+                        <span class="user-name">Hafidz</span>
+                        <span class="user-role">Student (Fedora Dev)</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Header bar -->
+            <header class="content-header">
+                <div class="header-left">
+                    <button class="sidebar-toggle" onclick="toggleSidebar()">
+                        <i class="ri-menu-2-line"></i>
+                    </button>
+                    <h2 id="current-materi-title">Dashboard Utama</h2>
+                </div>
+                <div class="header-right">
+                    <div class="system-time">
+                        <i class="ri-time-line"></i>
+                        <span id="live-clock">--:--:--</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Content Area Viewports -->
+            <div class="viewport">
+                <!-- Markdown Viewer Container -->
+                <div id="markdown-container" class="markdown-body active">
+                    <!-- Markdown gets rendered here -->
+                    <div class="loading-spinner-container">
+                        <div class="spinner"></div>
+                        <p>Mengambil data dari server lokal...</p>
+                    </div>
+                </div>
+
+                <!-- Custom Kamus (Glossary) Viewport -->
+                <div id="kamus-container" class="kamus-body">
+                    <div class="kamus-header">
+                        <h2>📚 Kamus Istilah Cyber Security</h2>
+                        <p>Cari arti istilah cyber security di bawah ini. Ketik kata kunci untuk memfilter.</p>
+                        
+                        <div class="search-box">
+                            <i class="ri-search-line"></i>
+                            <input type="text" id="kamus-search-input" placeholder="Cari istilah... (contoh: exploit, payload, port)" oninput="filterKamus()">
+                        </div>
+                    </div>
+
+                    <div id="kamus-items-list" class="kamus-grid">
+                        <!-- Glossary cards populated dynamically by JS -->
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Custom Logic -->
+    <script src="app.js?v=6"></script>
+</body>
+</html>
