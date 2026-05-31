@@ -23,7 +23,7 @@ Setiap kali Anda berselancar di internet dengan proxy aktif, Burp Suite akan mer
 ---
 
 ## 🎯 3. Apa itu Target Scoping dan Cara Menyetingnya?
-Saat Anda membuka Firefox dengan proxy aktif, browser Anda tidak hanya mengirim request ke website target (misalnya `localhost:8000`), tetapi juga mengirim data latar belakang ke situs Google Analytics, update Fedora OS, atau update ekstensi browser.
+Saat Anda membuka Firefox dengan proxy aktif, browser Anda tidak hanya mengirim request ke website target (misalnya `localhost:8000`), tetapi juga mengirim data latar belakang ke situs Google Analytics, update OS Anda, atau update ekstensi browser.
 
 Jika semua request ini direkam oleh Burp Suite, tab *HTTP History* Anda akan menjadi sangat kotor dan penuh sampah. Di sinilah fitur **Target Scope (Cakupan Target)** digunakan.
 

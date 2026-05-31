@@ -15,10 +15,10 @@ Hari pertama kita akan fokus membangun fondasi. Sebelum kita mulai meretas atau 
 
 ---
 
-## 🛠️ 2. Langkah Instalasi Burp Suite di Fedora Linux
-Karena Anda menggunakan Fedora Linux, kita akan menggunakan installer grafis resmi:
+## 🛠️ 2. Langkah Instalasi Burp Suite di Linux
+Jika Anda menggunakan Linux (seperti Fedora/Ubuntu/Debian), kita akan menggunakan installer grafis resmi:
 1.  Buka browser Anda dan unduh **Burp Suite Community Edition** (versi gratis) untuk Linux dari situs resmi PortSwigger.
-2.  Buka terminal Fedora Anda dan masuk ke direktori unduhan (biasanya `~/Downloads`).
+2.  Buka terminal Linux Anda dan masuk ke direktori unduhan (biasanya `~/Downloads`).
 3.  Berikan izin eksekusi (*Executable Permission*) agar file instalasi `.sh` bisa dijalankan dengan perintah:
     ```bash
     chmod +x burpsuite_community_linux_*.sh

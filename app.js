@@ -1,6 +1,6 @@
 // Configuration: List of available modules and documents
 const MODULE_MANIFEST = [
-    { id: 'home', title: 'Dashboard Utama', file: 'README.md', type: 'dashboard' },
+    { id: 'home', title: 'Dashboard Utama', file: 'home.md', type: 'dashboard' },
     { id: 'day-1', title: 'Hari 1: Setup & Instalasi Burp Suite', file: 'materi/01_setup_instalasi.md', type: 'materi' },
     { id: 'day-2', title: 'Hari 2: Navigasi Interface & Site Map', file: 'materi/02_interface_navigation.md', type: 'materi' },
     { id: 'day-3', title: 'Hari 3: HTTP Proxy & Interception', file: 'materi/03_proxy_intercept.md', type: 'materi' },
@@ -194,7 +194,7 @@ async function loadContent(id) {
         mdContainer.innerHTML = `
             <div style="border: 1px solid var(--accent-pink); padding: 24px; border-radius: 8px; background: rgba(255,0,127,0.05);">
                 <h3 style="color: var(--accent-pink); margin-top:0;"><i class="ri-error-warning-line"></i> Hubungan Terputus</h3>
-                <p>Gagal membaca file dari server lokal. Pastikan server python berjalan di Fedora Anda.</p>
+                <p>Gagal membaca file dari server lokal. Pastikan server python berjalan di komputer Anda.</p>
                 <p style="font-family: var(--font-code); font-size: 0.85rem; color: var(--text-muted); margin-bottom: 0;">Detail: ${err.message}</p>
             </div>
         `;

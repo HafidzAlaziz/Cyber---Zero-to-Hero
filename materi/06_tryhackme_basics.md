@@ -9,14 +9,14 @@ Hari ini kita akan melangkah keluar dari lab lokal komputer kita dan berlatih di
 
 ---
 
-## 🛠️ 2. Langkah Menghubungkan Fedora Linux ke TryHackMe via OpenVPN
-Agar laptop Fedora Anda bisa mengakses mesin virtual target di TryHackMe, Anda harus terhubung ke jaringan internal mereka menggunakan **OpenVPN**.
+## 🛠️ 2. Langkah Menghubungkan Linux/OS Anda ke TryHackMe via OpenVPN
+Agar komputer Linux/OS Anda bisa mengakses mesin virtual target di TryHackMe, Anda harus terhubung ke jaringan internal mereka menggunakan **OpenVPN**.
 
 1.  Daftar akun gratis di [https://tryhackme.com](https://tryhackme.com).
 2.  Setelah login, akses menu **Access** (di pojok kanan atas profil Anda).
 3.  Pilih server region terdekat (misal: Singapore) dan klik **Download My Configuration File** untuk mengunduh berkas VPN Anda (berformat `.ovpn`).
-4.  Buka terminal Fedora Linux Anda.
-5.  Instal aplikasi openvpn jika belum ada:
+4.  Buka terminal Linux Anda.
+5.  Instal aplikasi openvpn jika belum ada (misal pada Fedora: `sudo dnf install openvpn -y`, atau pada Ubuntu/Debian: `sudo apt install openvpn -y`):
     ```bash
     sudo dnf install openvpn -y
     ```
