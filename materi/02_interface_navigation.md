@@ -55,7 +55,12 @@ Mari kita latih navigasi menu Burp Target dan Site Map Anda dengan memecahkan 2 
 ### Lab 2: Menemukan Admin Portal dengan URL Rahasia Melalui Script Source Code
 *   **Target Lab:** [Unprotected admin functionality with unpredictable URL](https://portswigger.net/web-security/access-control/lab-unprotected-admin-functionality-with-unpredictable-url)
 *   **Fokus Burp Suite:** **Target -> Site Map (HTML & JS Analysis)**
-*   **Tujuan:** Buka lab di atas. Akses situs tersebut, lalu buka tab **Site Map** di Burp. Klik kanan pada request beranda ➔ pilih **Engagement tools** ➔ **Find references** (atau telusuri kode HTML di respon halaman utama). Temukan fungsi JavaScript tersembunyi yang membocorkan path URL panel admin rahasia. Akses URL tersebut dan hapus user `carlos` untuk menyelesaikan lab.
+*   **Tujuan:** Buka lab di atas. Akses situs tersebut. Karena fitur **Engagement Tools ➔ Find References** hanya ada di versi **Burp Suite Pro**, pengguna **Burp Suite Community Edition** bisa menggunakan alternatif berikut:
+    1.  Di Burp Suite, pilih request beranda (`/`) di tab **Target ➔ Site Map** atau **Proxy ➔ HTTP History**.
+    2.  Lihat panel **Response** di sebelah kanan bawah, lalu cari kolom pencarian (search bar) di bagian bawah tab Response tersebut.
+    3.  Ketik kata kunci `admin` atau telusuri langsung kode HTML-nya untuk menemukan fungsi JavaScript tersembunyi yang membocorkan path URL panel admin rahasia (contoh: `/admin-xxxxxx`).
+    4.  *(Alternatif Browser)*: Anda juga bisa klik kanan di halaman web ➔ **View Page Source** (Ctrl+U) dan cari script JavaScript di sana.
+    Setelah menemukan path URL admin rahasia tersebut, akses URL-nya di browser Anda dan hapus user `carlos` untuk menyelesaikan lab.
 *   **💡 Analogi IT:** Seperti membaca buku harian pemilik rumah untuk menemukan instruksi tersembunyi tentang letak kunci brankas yang disembunyikan di bawah pot bunga.
 
 ---
