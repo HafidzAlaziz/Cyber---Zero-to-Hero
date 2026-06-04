@@ -37,8 +37,8 @@ Setiap kali Anda menyelesaikan suatu hari pembelajaran, klik tombol **"Tandai Se
     *   *Fokus:* Mengenal 4 tipe serangan Intruder (Sniper, Battering Ram, Pitchfork, Cluster Bomb) dan mempraktikkan serangan tebak kata sandi otomatis (*Brute Force*).
 
 ### 🌐 Fase 3: Praktik Lab Eksternal (Hari 6 - 7)
-*   **[Hari 6: Walkthrough Lab TryHackMe](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/06_tryhackme_basics.md)**
-    *   *Fokus:* Mengakses lab gratis di platform internasional TryHackMe (ruang belajar interaktif keamanan siber) dan menyelesaikan room "Burp Suite: The Basics".
+*   **[Hari 6: Walkthrough Lab TryHackMe (AttackBox)](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/06_tryhackme_basics.md)**
+    *   *Fokus:* Mengakses lab gratis di platform internasional TryHackMe dan menyelesaikan room "Burp Suite: Basics" menggunakan cloud-based AttackBox tanpa instalasi VPN.
 *   **[Hari 7: Praktik PortSwigger Academy](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/07_portswigger_labs.md)**
     *   *Fokus:* Mendaftar di PortSwigger Web Security Academy (sekolah keamanan siber gratis dari pembuat Burp Suite) dan menyelesaikan lab eksploitasi SQL Injection dan XSS.
 
