@@ -52,7 +52,41 @@ Jika Anda tidak ingin menginstal OpenVPN atau mengalami kendala koneksi di kompu
 
 ---
 
-## 🚀 3. Daftar Ruang Latihan (TryHackMe & PortSwigger)
+## 🔍 3. Cara Verifikasi & Menggunakan Koneksi VPN/AttackBox
+
+Sebelum melompat ke tantangan room, pastikan koneksi Anda benar-benar terhubung dan ketahui cara memakainya dengan mengikuti langkah-langkah di bawah ini:
+
+### Langkah 1: Verifikasi Status di TryHackMe
+1. Buka kembali halaman **Access** ([tryhackme.com/access](https://tryhackme.com/access)).
+2. Refresh halaman tersebut. Jika koneksi VPN berhasil, Anda akan melihat **tanda centang hijau (Connected)** di sebelah nama server region, lengkap dengan alamat IP VPN Anda (misalnya `10.50.x.x`).
+
+### Langkah 2: Menyalakan Mesin Target di Room
+1. Buka salah satu room latihan (misal: [Burp Suite: Basics](https://tryhackme.com/room/burpsuitebasics)).
+2. Di dalam room, cari task yang membutuhkan praktik (misal **Task 10** atau **Task 14**).
+3. Klik tombol **Start Machine** (biasanya berwarna merah atau biru).
+4. Tunggu 1 hingga 2 menit agar server internal TryHackMe melakukan *booting*. Setelah menyala, TryHackMe akan menampilkan **IP Target** (misalnya `10.10.231.104`) di bagian atas halaman room.
+
+### Langkah 3: Tes Koneksi Komputer ke Mesin Target
+1. Buka **terminal baru** di komputer Anda (jangan menutup terminal tempat OpenVPN sedang berjalan).
+2. Lakukan uji *ping* ke IP Target untuk memastikan komputer Anda bisa berkomunikasi dengan server target lewat VPN:
+   ```bash
+   ping -c 4 <IP_TARGET>
+   ```
+   *(Contoh: `ping -c 4 10.10.231.104`)*
+3. Jika terminal menampilkan respon statistik data terkirim (*0% packet loss* / muncul waktu respons ms), selamat! Komputer Anda sudah resmi terhubung di jaringan lokal TryHackMe.
+   > [!NOTE]
+   > Jika Anda memilih **Opsi B (AttackBox)**, Anda tidak perlu melakukan tes ping ini karena browser virtual Anda sudah pasti berada di jaringan yang sama dengan mesin target.
+
+### Langkah 4: Mengakses Target Melalui Browser & Burp Suite
+1. Nyalakan browser Anda, pasang ekstensi **FoxyProxy** Anda ke mode Burp (Port `8080`), dan pastikan aplikasi **Burp Suite** Anda terbuka.
+2. Di Burp Suite, pastikan fitur **Proxy ➔ Intercept** dalam keadaan **Intercept is on** (menyala).
+3. Masukkan alamat IP Target (`http://<IP_TARGET>`) di bar pencarian browser Anda.
+4. Browser Anda akan loading terus-menerus. Buka jendela Burp Suite, Anda akan melihat request HTTP terperangkap di sana.
+5. Klik tombol **Forward** beberapa kali di Burp Suite untuk meneruskan datanya sampai halaman web target tampil sempurna di browser Anda.
+
+---
+
+## 🚀 4. Daftar Ruang Latihan (TryHackMe & PortSwigger)
 Selesaikan 3 aktivitas praktik berikut untuk memantapkan pemahaman dasar Anda di lingkungan eksternal:
 
 ### Ruang 1: TryHackMe Room - "Burp Suite: Basics"
