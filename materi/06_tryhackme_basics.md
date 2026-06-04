@@ -9,22 +9,46 @@ Hari ini kita akan melangkah keluar dari lab lokal komputer kita dan berlatih di
 
 ---
 
-## 🛠️ 2. Langkah Menghubungkan Linux/OS Anda ke TryHackMe via OpenVPN
-Agar komputer Linux/OS Anda bisa mengakses mesin virtual target di TryHackMe, Anda harus terhubung ke jaringan internal mereka menggunakan **OpenVPN**.
+## 🛠️ 2. Langkah Menghubungkan Linux/OS Anda ke TryHackMe (OpenVPN / AttackBox)
+
+### 💡 Mengapa Kita Membutuhkan OpenVPN?
+Mesin target (lab) yang Anda jalankan di TryHackMe berada di jaringan internal (*private network*) mereka (IP biasanya diawali `10.10.x.x`). Komputer Anda di rumah tidak bisa mengakses IP privat ini secara langsung melalui internet publik. 
+
+**OpenVPN** berguna untuk membuat terowongan aman (*VPN Tunnel*) yang menghubungkan komputer lokal Anda langsung ke dalam jaringan internal TryHackMe. Setelah terhubung, komputer Anda akan mendapatkan IP internal (biasanya `10.50.x.x`) sehingga Anda bisa memindai, memproksi, dan meretas mesin target tersebut seolah-olah Anda berada di satu jaringan lokal yang sama.
+
+---
+
+### Opsi A: Menggunakan OpenVPN di Komputer Lokal (Linux)
 
 1.  Daftar akun gratis di [https://tryhackme.com](https://tryhackme.com).
-2.  Setelah login, akses menu **Access** (di pojok kanan atas profil Anda).
-3.  Pilih server region terdekat (misal: Singapore) dan klik **Download My Configuration File** untuk mengunduh berkas VPN Anda (berformat `.ovpn`).
-4.  Buka terminal Linux Anda.
-5.  Instal aplikasi openvpn jika belum ada (misal pada Fedora: `sudo dnf install openvpn -y`, atau pada Ubuntu/Debian: `sudo apt install openvpn -y`):
+2.  Setelah login, akses menu **Access** melalui URL langsung [https://tryhackme.com/access](https://tryhackme.com/access) (atau klik ikon profil di pojok kanan atas ➔ pilih **Access**).
+3.  Pilih server region terdekat (misal: **Singapore** / **SG-VIP** jika Anda berlangganan premium) dan klik **Download My Configuration File** untuk mengunduh berkas koneksi Anda yang berformat `.ovpn` (contoh nama file: `username.ovpn` atau `username-singapore.ovpn`).
+4.  Buka terminal Linux Anda dan instal aplikasi OpenVPN jika belum terpasang:
+    *   **Untuk Ubuntu / Debian / Kali Linux** (paling umum digunakan):
+        ```bash
+        sudo apt update && sudo apt install openvpn -y
+        ```
+    *   **Untuk Fedora / RHEL**:
+        ```bash
+        sudo dnf install openvpn -y
+        ```
+5.  Masuk ke direktori tempat Anda mengunduh file VPN tersebut (biasanya di folder `Downloads`):
     ```bash
-    sudo dnf install openvpn -y
+    cd ~/Downloads
     ```
-6.  Jalankan koneksi VPN menggunakan file yang diunduh tadi (ganti `username` dengan nama akun Anda):
+6.  Jalankan koneksi VPN menggunakan file `.ovpn` yang diunduh (ganti `nama_file.ovpn` dengan nama file konfigurasi Anda sendiri):
     ```bash
-    sudo openvpn ~/Downloads/username.ovpn
+    sudo openvpn nama_file.ovpn
     ```
-    *(Penjelasan: Biarkan terminal ini tetap terbuka di latar belakang. Jika muncul baris tulisan `Initialization Sequence Completed`, berarti Anda telah sukses terhubung).*
+    *(Penjelasan: Biarkan terminal ini tetap terbuka di latar belakang selama Anda belajar. Jika muncul baris tulisan `Initialization Sequence Completed`, berarti Anda telah sukses terhubung ke jaringan TryHackMe. Untuk memutuskan koneksi, cukup tekan `Ctrl + C` di terminal tersebut).*
+
+---
+
+### Opsi B: Menggunakan AttackBox Bawaan (Tanpa Setup VPN)
+Jika Anda tidak ingin menginstal OpenVPN atau mengalami kendala koneksi di komputer lokal, TryHackMe menyediakan **AttackBox**:
+*   AttackBox adalah mesin virtual berbasis web yang berjalan langsung di cloud TryHackMe.
+*   Mesin ini sudah terhubung otomatis ke jaringan internal target dan dilengkapi dengan seluruh alat pentesting (termasuk Burp Suite, FoxyProxy, Nmap, dll).
+*   **Cara Menggunakan:** Klik tombol **"Start AttackBox"** berwarna biru di bagian atas halaman room TryHackMe. Layar mesin virtual akan muncul langsung di browser Anda.
 
 ---
 
