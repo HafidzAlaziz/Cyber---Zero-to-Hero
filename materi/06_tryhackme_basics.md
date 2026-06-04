@@ -31,10 +31,10 @@ Agar komputer Linux/OS Anda bisa mengakses mesin virtual target di TryHackMe, An
 ## 🚀 3. Daftar Ruang Latihan (TryHackMe & PortSwigger)
 Selesaikan 3 aktivitas praktik berikut untuk memantapkan pemahaman dasar Anda di lingkungan eksternal:
 
-### Ruang 1: TryHackMe Room - "Burp Suite: The Basics"
-*   **Target Link:** [TryHackMe: Burp Suite The Basics](https://tryhackme.com/room/burpsuitethebasics)
-*   **Fokus:** Seluruh antarmuka Burp Suite, FoxyProxy, CA Certificate, Target Scope, dan HTTP History.
-*   **Tujuan:** Nyalakan mesin target, hubungkan OpenVPN Anda. Jawab pertanyaan-pertanyaan teori dan temukan flag yang diminta di dalam sistem dengan menyadap request HTTP browser Anda.
+### Ruang 1: TryHackMe Room - "Burp Suite: Basics"
+*   **Target Link:** [TryHackMe: Burp Suite Basics](https://tryhackme.com/room/burpsuitebasics)
+*   **Fokus:** Antarmuka Burp Suite, FoxyProxy, CA Certificate, Target Scope, Site Map, dan Burp Browser.
+*   **Tujuan:** Hubungkan OpenVPN Anda, pelajari menu navigasi, dan jawab pertanyaan teori. Untuk praktik, temukan flag tersembunyi di **Task 10 (Site Map)** dengan mengakses mesin target dan melihat respon dari endpoint yang tidak biasa (unusual endpoint), lalu ikuti petunjuk XSS di **Task 14 (Example Attack)**.
 *   **💡 Analogi IT:** Seperti mengikuti ujian simulator mengemudi mobil untuk memastikan Anda paham fungsi pedal gas, rem, dan persneling.
 
 ### Ruang 2: TryHackMe Room - "Burp Suite: Repeater"
