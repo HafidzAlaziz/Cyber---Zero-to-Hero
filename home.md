@@ -37,8 +37,8 @@ Setiap kali Anda menyelesaikan suatu hari pembelajaran, klik tombol **"Tandai Se
     *   *Fokus:* Mengenal 4 tipe serangan Intruder (Sniper, Battering Ram, Pitchfork, Cluster Bomb) dan mempraktikkan serangan tebak kata sandi otomatis (*Brute Force*).
 
 ### 🌐 Fase 3: Praktik Lab Eksternal (Hari 6 - 7)
-*   **[Hari 6: Walkthrough Lab TryHackMe (AttackBox)](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/06_tryhackme_basics.md)**
-    *   *Fokus:* Mengakses lab gratis di platform internasional TryHackMe dan menyelesaikan room "Burp Suite: Basics" menggunakan cloud-based AttackBox tanpa instalasi VPN.
+*   **[Hari 6: Menguasai Burp Decoder & Comparer](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/06_portswigger_basics.md)**
+    *   *Fokus:* Menerjemahkan data terkode/terenkripsi (Base64 & MD5) serta membandingkan perbedaan respon HTTP yang tipis menggunakan tab Decoder dan Comparer secara praktis di PortSwigger Academy.
 *   **[Hari 7: Praktik PortSwigger Academy](file:///mnt/c369c338-f77c-46ea-923a-21cd51718e89/Apiss/Belajar/Road%20To%20Cyber/materi/07_portswigger_labs.md)**
     *   *Fokus:* Mendaftar di PortSwigger Web Security Academy (sekolah keamanan siber gratis dari pembuat Burp Suite) dan menyelesaikan lab eksploitasi SQL Injection dan XSS.
 
@@ -61,8 +61,8 @@ Jalur belajar di atas diselaraskan dengan video-video referensi berikut:
     *   *Membahas:* Intercept HTTP, common mistakes, AI workflows, dan bug bounty.
 3.  **[Burp Suite Full Tutorial with Practical in 2 Hours](https://www.youtube.com/watch?v=GxvFqgCBW-8)** (WsCube Cyber Security)
     *   *Membahas:* Setup dasar, konfigurasi Firefox proxy, dan praktik fitur utama.
-4.  **[TryHackMe Burp Suite: The Basics Walkthrough](https://www.youtube.com/watch?v=98PpFYJv0L0)** (Tutorial TryHackMe)
-    *   *Membahas:* Instalasi, Dashboard, Proxy, FoxyProxy, CA Certificate, Site Map, Scoping, HTTPS Proxying, dan contoh serangan.
+4.  **[Burp Suite Decoder and Comparer Tutorials](https://www.youtube.com/watch?v=FzFdBHAtTl4)** (Tutorial Burp Suite)
+    *   *Membahas:* Panduan visual menggunakan Decoder untuk mengonversi data/hash dan menggunakan Comparer untuk mencari perbedaan respon HTTP.
 5.  **[How to Use Burp Suite Like a PRO](https://www.youtube.com/watch?v=GxvFqgCBW-8)** (Kyser Clark - Cybersecurity)
     *   *Membahas:* Penjelasan santai setup dasar untuk pemula.
 6.  **[Burp Suite Tutorial for Beginners | Complete Guide Playlist](https://www.youtube.com/playlist?list=PL6FTq_v8hDb2mXzeLoXZcWGEa7DvYkSSb)** (12 Video)

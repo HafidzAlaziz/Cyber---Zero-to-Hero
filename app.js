@@ -6,7 +6,7 @@ const MODULE_MANIFEST = [
     { id: 'day-3', title: 'Hari 3: HTTP Proxy & Interception', file: 'materi/03_proxy_intercept.md', type: 'materi' },
     { id: 'day-4', title: 'Hari 4: Burp Repeater - Analisis Manual', file: 'materi/04_repeater_manual.md', type: 'materi' },
     { id: 'day-5', title: 'Hari 5: Burp Intruder - Otomatisasi & Fuzzing', file: 'materi/05_intruder_bruteforce.md', type: 'materi' },
-    { id: 'day-6', title: 'Hari 6: Walkthrough Lab TryHackMe (AttackBox)', file: 'materi/06_tryhackme_basics.md', type: 'materi' },
+    { id: 'day-6', title: 'Hari 6: Menguasai Burp Decoder & Comparer', file: 'materi/06_portswigger_basics.md', type: 'materi' },
     { id: 'day-7', title: 'Hari 7: Praktik PortSwigger Academy', file: 'materi/07_portswigger_labs.md', type: 'materi' },
     { id: 'day-8', title: 'Hari 8: Common Mistakes & Integrasi AI', file: 'materi/08_common_mistakes_ai.md', type: 'materi' },
     { id: 'day-9', title: 'Hari 9: Bug Bounty & Pentesting Workflow', file: 'materi/09_bug_bounty_workflow.md', type: 'materi' },
