@@ -18,7 +18,7 @@ Kedua tab ini membantu kita menganalisis data terenkripsi atau terkode, serta me
 Selesaikan 2 lab interaktif berikut untuk melatih kemampuan Anda menggunakan Decoder dan Comparer:
 
 ### Lab 1: Brute-forcing a stay-logged-in cookie (Menggunakan Burp Decoder & Intruder)
-* **Target Lab:** [Lab: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/authentication/password-based/lab-brute-forcing-a-stay-logged-in-cookie)
+* **Target Lab:** [Lab: Brute-forcing a stay-logged-in cookie](https://portswigger.net/web-security/authentication/other-mechanisms/lab-brute-forcing-a-stay-logged-in-cookie)
 * **Fokus Burp:** **Decoder ➔ Base64 & MD5 Hash Analysis ➔ Intruder Payload Processing**
 * **Tujuan:**
   1. Klik link lab di atas, masuk menggunakan akun demo Anda: `wiener:peter`. Centang kotak **"Stay logged in"** saat login.
