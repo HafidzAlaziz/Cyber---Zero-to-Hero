@@ -30,9 +30,9 @@ Selesaikan 2 lab interaktif berikut untuk melatih kemampuan Anda menggunakan Dec
   7. Sekarang, kirim request `/my-account` (yang berisi cookie `stay-logged-in`) ke **Intruder**.
   8. Di tab **Positions**, blok nilai cookie `stay-logged-in` dan klik **Add §** untuk menjadikannya target serangan (misal: `stay-logged-in=§target§`).
   9. Di tab **Payloads**, masukkan wordlist password yang disediakan oleh lab. Di bagian bawah (**Payload Processing**), klik **Add** untuk menambahkan aturan pemrosesan otomatis berikut secara berurutan:
-     * **Hash:** pilih **MD5** (mengubah kata sandi biasa menjadi MD5 hash).
-     * **Add prefix:** ketik `carlos:` (menggabungkannya menjadi format `carlos:md5hash`).
-     * **Encode:** pilih **Base64** (menyandikan seluruh string ke Base64 sebelum dikirim).
+     * **Hash:** Pilih **Rule type** ➔ **Hash**, lalu pilih **MD5** pada opsi algoritma hash yang muncul.
+     * **Add prefix:** Pilih **Rule type** ➔ **Add prefix**, lalu ketik `carlos:` pada kolom pengisian.
+     * **Encode:** Pilih **Rule type** ➔ **Encode**, lalu pilih **Base64** pada opsi jenis encoding yang muncul.
   10. Jalankan serangan Intruder, cari respon dengan status `200 OK` (menandakan keberhasilan masuk sebagai Carlos), lalu refresh halaman browser Anda untuk memicu kelulusan lab.
 * **💡 Analogi IT:** Seperti menggunakan alat penerjemah bahasa sandi (Decoder) untuk membaca surat rahasia penjaga pintu, lalu memalsukan tanda tangan supervisor agar diizinkan masuk.
 
